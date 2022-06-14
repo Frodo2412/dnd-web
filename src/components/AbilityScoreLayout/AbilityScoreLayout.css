@@ -7,3 +7,12 @@
     flex-wrap: wrap;
     max-width: 660px;
 }
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 300px;
+    padding: 10px 0;
+}

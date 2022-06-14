@@ -8,15 +8,18 @@ interface AbilityScoreLayoutProps {
 }
 
 export const AbilityScoreLayout = (props: AbilityScoreLayoutProps) => {
-
     return (
         <div className="ability-score-layout">
-            <AbilityScoreTile abilityScore={props.abilityScores.strength}/>
-            <AbilityScoreTile abilityScore={props.abilityScores.dexterity}/>
-            <AbilityScoreTile abilityScore={props.abilityScores.constitution}/>
-            <AbilityScoreTile abilityScore={props.abilityScores.intelligence}/>
-            <AbilityScoreTile abilityScore={props.abilityScores.wisdom}/>
-            <AbilityScoreTile abilityScore={props.abilityScores.charisma}/>
+            <div className={"row"}>
+                <AbilityScoreTile abilityScore={props.abilityScores.strength}/>
+                <AbilityScoreTile abilityScore={props.abilityScores.dexterity}/>
+                <AbilityScoreTile abilityScore={props.abilityScores.constitution}/>
+            </div>
+            <div className={"row"}>
+                <AbilityScoreTile abilityScore={props.abilityScores.intelligence}/>
+                <AbilityScoreTile abilityScore={props.abilityScores.wisdom}/>
+                <AbilityScoreTile abilityScore={props.abilityScores.charisma}/>
+            </div>
         </div>
     );
 };
